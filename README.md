@@ -48,105 +48,53 @@ Data:
 PROJECT STRUCTURE
 -----------------
 
-PROJECT STRUCTURE
+## PROJECT STRUCTURE
 
 The project is divided into two main parts: Frontend and Backend.
 
-
-FRONTEND
+### Frontend
 
 The frontend is built using Next.js, React, and TypeScript.
 
-app/
-Contains the main Next.js pages and global CSS.
+- `app/` - Contains the main Next.js pages and global CSS.
+- `components/` - Contains reusable components used to build the company dashboard.
+- `lib/api.ts` - Handles communication between the frontend and backend API.
+- `types/` - Contains TypeScript interfaces and types for company data.
 
-components/
-Contains reusable components used to build the company dashboard.
+### Main Frontend Components
 
-lib/api.ts
-Handles communication between the frontend and backend API.
+- `CompanyPage` - Main company detail dashboard.
+- `CompanySearch` - Allows users to search companies by name or ticker.
+- `CompanyHeader` - Displays company name, exchange, sector, price, and basic information.
+- `KeyRatios` - Displays important financial ratios.
+- `Shareholding` - Displays the company shareholding pattern.
+- `PriceChart` - Displays historical price and trading volume.
+- `Financials` - Displays financial statements and historical financial data.
+- `PeerComparison` - Compares the selected company with other companies.
+- `AnalystSummary` - Displays analyst rating, target price, and analyst consensus.
+- `ResearchStatus` - Displays research coverage and research report information.
+- `Estimates` - Displays estimated future revenue, profit, and EPS.
+- `Documents` - Displays available company reports and documents.
 
-types/
-Contains TypeScript interfaces and types for company data.
-
-
-MAIN FRONTEND COMPONENTS
-
-CompanyPage
-Main company detail dashboard.
-
-CompanySearch
-Allows users to search companies by name or ticker.
-
-CompanyHeader
-Displays company name, exchange, sector, price, and basic information.
-
-KeyRatios
-Displays important financial ratios.
-
-Shareholding
-Displays the company shareholding pattern.
-
-PriceChart
-Displays historical price and trading volume.
-
-Financials
-Displays financial statements and historical financial data.
-
-PeerComparison
-Compares the selected company with other companies in the same industry.
-
-AnalystSummary
-Displays analyst rating, target price, and analyst consensus.
-
-ResearchStatus
-Displays research coverage and research report information.
-
-Estimates
-Displays estimated future revenue, profit, and EPS.
-
-Documents
-Displays available company reports and documents.
-
-
-BACKEND
+### Backend
 
 The backend is built using Node.js, Express, and TypeScript.
 
-src/server.ts
-Starts the Express server and configures the API.
+- `src/server.ts` - Starts the Express server and configures the API.
+- `src/data/companies.json` - Contains all mock company data.
+- `src/routes/` - Contains API routes for retrieving company data and searching companies.
+- `src/utils/` - Contains the company search and matching logic.
 
-src/data/companies.json
-Contains all mock company data used by the application.
-
-src/routes/
-Contains API routes for retrieving company data and searching companies.
-
-src/utils/
-Contains the company search and matching logic.
-
-
-DATA FLOW
+### Data Flow
 
 The application follows this flow:
 
-companies.json
-        |
-        v
-Node.js + Express API
-        |
-        v
-Frontend API Layer
-        |
-        v
-CompanyPage
-        |
-        v
-Reusable React Components
-        |
-        v
-Company Dashboard
-
+`companies.json`
+→ `Node.js + Express API`
+→ `Frontend API Layer`
+→ `CompanyPage`
+→ `Reusable React Components`
+→ `Company Dashboard`
 
 DATA SOURCE
 
@@ -155,6 +103,8 @@ The project uses mock JSON data only.
 No live stock market API or external market-data service is used.
 
 All company information, financial data, shareholding data, historical prices, analyst information, estimates, and documents are stored in the JSON file and served through the backend API.
+
+
 SETUP INSTRUCTIONS
 ------------------
 
