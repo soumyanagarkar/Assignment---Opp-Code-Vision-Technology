@@ -3,12 +3,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Company Detailed View",
-  description: "Mock Indian listed-company research dashboard"
+  description: "Indian listed company research dashboard"
 };
 
 export default function RootLayout({
   children
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>

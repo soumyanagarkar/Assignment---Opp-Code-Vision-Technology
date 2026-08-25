@@ -1,132 +1,145 @@
-# Company Detailed View
+COMPANY DETAILED VIEW
+=====================
 
-Technical assessment implementation using Next.js, React, TypeScript and a small Node/Express API.
+A responsive company research page built using Next.js, React, TypeScript, and Node.js/Express.
 
-## Features
+The design is inspired by financial research platforms such as Screener.in. The project uses mock JSON data and does not use any live stock market API.
 
-- Responsive listed-company detail page inspired by the information density and layout patterns of Screener.in.
-- Company overview and current snapshot.
-- Key ratios.
-- Shareholding pattern.
-- Profit & loss and balance sheet statements.
-- Historical price/volume chart.
-- Peer comparison.
-- Analyst summary.
-- Research status.
-- Estimates.
-- Documents.
-- Search by company name or ticker.
-- Loading, empty and API error states.
-- Mock JSON data only; no live market-data API.
-- Reusable TypeScript React components.
-- Express API with company list, search and company detail endpoints.
 
-## Project structure
+FEATURES
+--------
 
-```text
+- Company overview
+- Current stock price
+- Key financial ratios
+- Shareholding pattern
+- Financial statements
+- Historical price and volume chart
+- Peer comparison
+- Analyst summary
+- Research status
+- Estimates
+- Company documents
+- Search by company name or ticker
+- Loading and error states
+- Responsive design
+
+
+TECHNOLOGIES USED
+-----------------
+
+Frontend:
+- Next.js
+- React
+- TypeScript
+- CSS
+- Lucide React
+
+Backend:
+- Node.js
+- Express.js
+- TypeScript
+
+Data:
+- Mock JSON data
+- No live market-data API
+
+
+PROJECT STRUCTURE
+-----------------
+
 company-detailed-view/
-├── frontend/              # Next.js App Router application
+│
+├── frontend/
 │   ├── app/
 │   ├── components/
 │   ├── lib/
 │   └── types/
-├── backend/               # Node + Express + TypeScript API
-│   └── src/
-├── .gitignore
-└── README.md
-```
+│
+└── backend/
+    ├── src/
+    └── data/
+        └── companies.json
 
-## Requirements
 
-- Node.js 20.9+ recommended.
-- npm.
+SETUP INSTRUCTIONS
+------------------
 
-Next.js currently recommends Node.js 20.9+ for its App Router learning stack.
+1. Clone the repository
 
-## Run locally
+git clone YOUR_GITHUB_REPOSITORY_URL
 
-### 1. Start the API
+cd company-detailed-view
 
-```bash
+
+2. Start the Backend
+
+Open a terminal and run:
+
 cd backend
+
 npm install
+
 npm run dev
-```
 
-API runs on `http://localhost:4000`.
+The backend will run on:
 
-### 2. Start the frontend
+http://localhost:5000
 
-Open a second terminal:
 
-```bash
+3. Start the Frontend
+
+Open another terminal and run:
+
 cd frontend
+
 npm install
+
 npm run dev
-```
 
-Frontend runs on `http://localhost:3000`.
+Open the application in the browser:
 
-The frontend reads `NEXT_PUBLIC_API_URL` and defaults to `http://localhost:4000/api`.
+http://localhost:3000
 
-To override it:
 
-```bash
-# frontend/.env.local
-NEXT_PUBLIC_API_URL=http://localhost:4000/api
-```
+API ENDPOINTS
+-------------
 
-## API
+Get company data:
 
-- `GET /api/health`
-- `GET /api/companies`
-- `GET /api/companies?q=infosys`
-- `GET /api/companies/:ticker`
+GET /api/companies/TCS
 
-Examples:
 
-```text
-GET http://localhost:4000/api/companies?q=INFY
-GET http://localhost:4000/api/companies/INFY
-```
+Search companies:
 
-## Mock data
+GET /api/companies/search?q=tata
 
-The API data is in:
 
-`backend/src/data/companies.json`
+APPROACH
+--------
 
-No live market-data provider is used.
+The application is divided into reusable React components such as CompanyHeader, KeyRatios, Shareholding, Financials, PriceChart, PeerComparison, AnalystSummary, ResearchStatus, Estimates, and Documents.
 
-## Design approach
+Company information is stored in JSON files instead of being hardcoded in the frontend.
 
-The page uses a dashboard-style information hierarchy:
+The Node.js and Express backend reads the JSON data and provides it through API endpoints.
 
-1. Search and navigation.
-2. Company identity and price snapshot.
-3. Overview and key ratios.
-4. Price/volume visualization.
-5. Financial statements.
-6. Shareholding and peers.
-7. Analyst/research information.
-8. Estimates.
-9. Documents.
+The frontend fetches the data from the backend and displays it on the company page.
 
-The UI is intentionally assessment-friendly: clean, compact, readable, responsive, and easy to extend.
+The search feature supports company names and tickers. Search requests are debounced to avoid unnecessary API requests, and results are ranked based on their relevance.
 
-## Suggested meaningful Git commits
+Loading and error states have also been added so the user receives feedback while data is being loaded or if the backend is unavailable.
 
-```text
-feat: scaffold Next.js frontend and Express API
-feat: add mock company data and search endpoints
-feat: build company overview and ratios
-feat: add historical price volume chart
-feat: add financials shareholding and peer comparison
-feat: add analyst research estimates and documents
-feat: add loading error and responsive states
-docs: add setup and implementation notes
-```
+The layout is responsive and works across desktop, tablet, and mobile screen sizes.
 
-## Notes
 
-This is an assessment exercise. All figures, analyst comments, estimates and documents are fictional mock data and must not be treated as investment advice.
+DATA
+----
+
+This project uses mock company data for the assessment.
+
+No live stock market API is used.
+
+The data is stored locally in JSON format.
+
+

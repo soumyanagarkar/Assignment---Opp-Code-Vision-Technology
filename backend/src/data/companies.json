@@ -1,302 +1,647 @@
 [
   {
-    "ticker": "INFY",
-    "name": "Infosys Limited",
+    "ticker": "TCS",
+    "name": "Tata Consultancy Services Limited",
+    "shortName": "TCS",
     "exchange": "NSE",
     "sector": "Information Technology",
     "industry": "IT Services & Consulting",
-    "price": 1842.55,
-    "change": 18.2,
-    "changePercent": 1.0,
-    "marketCap": "₹7.66 L Cr",
-    "lastUpdated": "24 Aug 2026, 03:30 PM",
-    "about": "Infosys is a global digital services and consulting company providing technology, transformation and outsourcing services to enterprises.",
-    "website": "https://www.infosys.com",
-    "metrics": [
-      {"label":"P/E","value":"26.8","tone":"neutral"},
-      {"label":"P/B","value":"7.1","tone":"neutral"},
-      {"label":"ROE","value":"28.4%","tone":"positive"},
-      {"label":"ROCE","value":"34.1%","tone":"positive"},
-      {"label":"Dividend Yield","value":"2.3%","tone":"positive"},
-      {"label":"Debt/Equity","value":"0.08","tone":"positive"}
+    "aliases": [
+      "tcs",
+      "tata consultancy",
+      "tata consultancy services",
+      "tata consultancy services limited"
     ],
-    "shareholding": [
-      {"name":"Promoters","value":13.11},
-      {"name":"FII","value":34.52},
-      {"name":"DII","value":35.87},
-      {"name":"Public","value":16.50}
-    ],
-    "financials": [
-      {"year":"FY22","revenue":121641,"profit":22110,"eps":53.1},
-      {"year":"FY23","revenue":146767,"profit":24108,"eps":58.0},
-      {"year":"FY24","revenue":153670,"profit":26148,"eps":62.9},
-      {"year":"FY25","revenue":162990,"profit":27345,"eps":65.8},
-      {"year":"FY26","revenue":171820,"profit":29410,"eps":70.7}
-    ],
-    "balanceSheet": [
-      {"year":"FY22","equity":78500,"reserves":74400,"debt":12600},
-      {"year":"FY23","equity":82000,"reserves":78200,"debt":11100},
-      {"year":"FY24","equity":87500,"reserves":83700,"debt":9800},
-      {"year":"FY25","equity":91200,"reserves":87400,"debt":8600},
-      {"year":"FY26","equity":95800,"reserves":91900,"debt":7600}
-    ],
-    "history": [
-      {"date":"2026-07-20","price":1762,"volume":8200000},
-      {"date":"2026-07-21","price":1780,"volume":9100000},
-      {"date":"2026-07-22","price":1772,"volume":7600000},
-      {"date":"2026-07-23","price":1798,"volume":10300000},
-      {"date":"2026-07-24","price":1810,"volume":9600000},
-      {"date":"2026-07-27","price":1802,"volume":7200000},
-      {"date":"2026-07-28","price":1824,"volume":8800000},
-      {"date":"2026-07-29","price":1818,"volume":6900000},
-      {"date":"2026-07-30","price":1832,"volume":9300000},
-      {"date":"2026-07-31","price":1827,"volume":8700000},
-      {"date":"2026-08-03","price":1840,"volume":9900000},
-      {"date":"2026-08-04","price":1822,"volume":7900000},
-      {"date":"2026-08-05","price":1838,"volume":8100000},
-      {"date":"2026-08-06","price":1852,"volume":10400000},
-      {"date":"2026-08-07","price":1845,"volume":8400000},
-      {"date":"2026-08-10","price":1860,"volume":11200000},
-      {"date":"2026-08-11","price":1851,"volume":9500000},
-      {"date":"2026-08-12","price":1839,"volume":8700000},
-      {"date":"2026-08-13","price":1847,"volume":9000000},
-      {"date":"2026-08-14","price":1868,"volume":11900000},
-      {"date":"2026-08-18","price":1857,"volume":8600000},
-      {"date":"2026-08-19","price":1849,"volume":8300000},
-      {"date":"2026-08-20","price":1835,"volume":7800000},
-      {"date":"2026-08-21","price":1824,"volume":7600000},
-      {"date":"2026-08-24","price":1842.55,"volume":9700000}
+    "description": "Tata Consultancy Services is a global information technology services and consulting company providing digital transformation, cloud, cybersecurity, engineering and business solutions.",
+    "price": {
+      "current": 3245.6,
+      "change": 28.45,
+      "changePercent": 0.88,
+      "previousClose": 3217.15
+    },
+    "overview": {
+      "marketCap": "₹11.75 L Cr",
+      "enterpriseValue": "₹11.58 L Cr",
+      "bookValue": "₹284.60",
+      "faceValue": "₹1",
+      "dividendYield": "1.25%",
+      "peRatio": "25.40",
+      "pbRatio": "11.40",
+      "roe": "46.80%",
+      "roce": "57.20%",
+      "debtToEquity": "0.09"
+    },
+    "shareholding": {
+      "promoters": 71.74,
+      "foreignInstitutions": 12.84,
+      "domesticInstitutions": 8.71,
+      "retail": 6.71
+    },
+    "financials": {
+      "years": [
+        "FY22",
+        "FY23",
+        "FY24",
+        "FY25"
+      ],
+      "sales": [
+        191754,
+        225458,
+        240893,
+        255324
+      ],
+      "expenses": [
+        143628,
+        169742,
+        182435,
+        193821
+      ],
+      "profit": [
+        38069,
+        42147,
+        46362,
+        48647
+      ],
+      "eps": [
+        103.2,
+        114.4,
+        126.1,
+        132.5
+      ]
+    },
+    "balanceSheet": {
+      "years": [
+        "FY22",
+        "FY23",
+        "FY24",
+        "FY25"
+      ],
+      "equity": [
+        103452,
+        118235,
+        129874,
+        142531
+      ],
+      "borrowings": [
+        12145,
+        10872,
+        9543,
+        8125
+      ],
+      "cash": [
+        39852,
+        44231,
+        51242,
+        58731
+      ]
+    },
+    "priceHistory": [
+      {
+        "date": "2026-01-01",
+        "price": 3580,
+        "volume": 1850000
+      },
+      {
+        "date": "2026-02-01",
+        "price": 3495,
+        "volume": 1720000
+      },
+      {
+        "date": "2026-03-01",
+        "price": 3410,
+        "volume": 1930000
+      },
+      {
+        "date": "2026-04-01",
+        "price": 3345,
+        "volume": 2100000
+      },
+      {
+        "date": "2026-05-01",
+        "price": 3280,
+        "volume": 1870000
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3205,
+        "volume": 2240000
+      },
+      {
+        "date": "2026-07-01",
+        "price": 3217,
+        "volume": 2010000
+      },
+      {
+        "date": "2026-08-01",
+        "price": 3245,
+        "volume": 2180000
+      }
     ],
     "peers": [
-      {"name":"TCS","ticker":"TCS","price":"₹3,986","pe":"29.1","roe":"51.2%","marketCap":"₹14.4 L Cr"},
-      {"name":"HCLTech","ticker":"HCLTECH","price":"₹1,738","pe":"24.6","roe":"28.7%","marketCap":"₹4.7 L Cr"},
-      {"name":"Wipro","ticker":"WIPRO","price":"₹528","pe":"21.4","roe":"17.9%","marketCap":"₹2.7 L Cr"},
-      {"name":"Tech Mahindra","ticker":"TECHM","price":"₹1,694","pe":"30.5","roe":"18.2%","marketCap":"₹1.7 L Cr"}
+      {
+        "name": "Infosys Limited",
+        "ticker": "INFY",
+        "marketCap": "₹7.10 L Cr",
+        "pe": 24.2,
+        "roe": 31.4
+      },
+      {
+        "name": "HCL Technologies Limited",
+        "ticker": "HCLTECH",
+        "marketCap": "₹4.85 L Cr",
+        "pe": 22.7,
+        "roe": 26.8
+      },
+      {
+        "name": "Wipro Limited",
+        "ticker": "WIPRO",
+        "marketCap": "₹2.55 L Cr",
+        "pe": 20.9,
+        "roe": 17.3
+      }
     ],
     "analyst": {
-      "consensus": "Accumulate",
-      "score": 3.8,
-      "coverage": 27,
-      "summary": "Analysts remain constructive on margin recovery and large-deal momentum, while near-term discretionary spending remains a key monitorable.",
-      "bullCase": "Improving operating leverage and stronger large-deal conversion.",
-      "riskCase": "Slower global technology spending and currency volatility."
+      "rating": "Buy",
+      "targetPrice": 3650,
+      "upside": "12.46%",
+      "buy": 28,
+      "hold": 8,
+      "sell": 2,
+      "summary": "Analysts expect steady demand for cloud, AI and digital transformation services."
     },
-    "researchStatus": {
-      "status": "Under Review",
-      "lastReview": "18 Aug 2026",
-      "owner": "Equity Research Desk",
-      "nextReview": "Q2 FY27 results"
+    "research": {
+      "status": "Covered",
+      "lastUpdated": "August 2026",
+      "researchReports": 24
     },
-    "estimates": [
-      {"year":"FY27E","revenue":"₹1,86,500 Cr","ebitda":"₹38,900 Cr","eps":"₹78.4"},
-      {"year":"FY28E","revenue":"₹2,02,800 Cr","ebitda":"₹43,700 Cr","eps":"₹87.9"},
-      {"year":"FY29E","revenue":"₹2,20,400 Cr","ebitda":"₹48,600 Cr","eps":"₹98.2"}
-    ],
+    "estimates": {
+      "years": [
+        "FY26E",
+        "FY27E",
+        "FY28E"
+      ],
+      "revenue": [
+        267800,
+        282500,
+        300100
+      ],
+      "profit": [
+        51500,
+        55700,
+        60400
+      ],
+      "eps": [
+        140.3,
+        151.8,
+        164.5
+      ]
+    },
     "documents": [
-      {"title":"Annual Report FY26","type":"Annual Report","date":"30 Jun 2026","size":"4.8 MB"},
-      {"title":"Investor Presentation Q1 FY27","type":"Presentation","date":"17 Jul 2026","size":"2.1 MB"},
-      {"title":"Earnings Call Transcript Q1 FY27","type":"Transcript","date":"18 Jul 2026","size":"780 KB"},
-      {"title":"Corporate Governance Report","type":"Governance","date":"20 Jul 2026","size":"640 KB"}
+      {
+        "title": "Annual Report FY2025",
+        "type": "Annual Report",
+        "date": "May 2025"
+      },
+      {
+        "title": "Q1 FY2026 Results",
+        "type": "Financial Results",
+        "date": "July 2025"
+      },
+      {
+        "title": "Investor Presentation",
+        "type": "Presentation",
+        "date": "July 2025"
+      }
+    ]
+  },
+  {
+    "ticker": "INFY",
+    "name": "Infosys Limited",
+    "shortName": "Infosys",
+    "exchange": "NSE",
+    "sector": "Information Technology",
+    "industry": "IT Services & Consulting",
+    "aliases": [
+      "infosys",
+      "infosys limited",
+      "infosys ltd",
+      "infy"
+    ],
+    "description": "Infosys is a global digital services and consulting company helping enterprises navigate digital transformation through technology, cloud and AI solutions.",
+    "price": {
+      "current": 1785.4,
+      "change": 15.8,
+      "changePercent": 0.89,
+      "previousClose": 1769.6
+    },
+    "overview": {
+      "marketCap": "₹7.10 L Cr",
+      "enterpriseValue": "₹6.91 L Cr",
+      "bookValue": "₹237.40",
+      "faceValue": "₹5",
+      "dividendYield": "2.15%",
+      "peRatio": "24.20",
+      "pbRatio": "7.52",
+      "roe": "31.40%",
+      "roce": "38.60%",
+      "debtToEquity": "0.08"
+    },
+    "shareholding": {
+      "promoters": 14.61,
+      "foreignInstitutions": 35.72,
+      "domesticInstitutions": 34.12,
+      "retail": 15.55
+    },
+    "financials": {
+      "years": [
+        "FY22",
+        "FY23",
+        "FY24",
+        "FY25"
+      ],
+      "sales": [
+        121641,
+        146767,
+        153670,
+        162990
+      ],
+      "expenses": [
+        91342,
+        110432,
+        115182,
+        122471
+      ],
+      "profit": [
+        22110,
+        24108,
+        26248,
+        26983
+      ],
+      "eps": [
+        52.8,
+        57.8,
+        63.1,
+        64.9
+      ]
+    },
+    "balanceSheet": {
+      "years": [
+        "FY22",
+        "FY23",
+        "FY24",
+        "FY25"
+      ],
+      "equity": [
+        84231,
+        93254,
+        101824,
+        112481
+      ],
+      "borrowings": [
+        8230,
+        7421,
+        6812,
+        5943
+      ],
+      "cash": [
+        31142,
+        34871,
+        39214,
+        42156
+      ]
+    },
+    "priceHistory": [
+      {
+        "date": "2026-01-01",
+        "price": 1925,
+        "volume": 2450000
+      },
+      {
+        "date": "2026-02-01",
+        "price": 1880,
+        "volume": 2210000
+      },
+      {
+        "date": "2026-03-01",
+        "price": 1842,
+        "volume": 2670000
+      },
+      {
+        "date": "2026-04-01",
+        "price": 1810,
+        "volume": 2390000
+      },
+      {
+        "date": "2026-05-01",
+        "price": 1795,
+        "volume": 2580000
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1772,
+        "volume": 2740000
+      },
+      {
+        "date": "2026-07-01",
+        "price": 1769,
+        "volume": 2630000
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1785,
+        "volume": 2910000
+      }
+    ],
+    "peers": [
+      {
+        "name": "Tata Consultancy Services Limited",
+        "ticker": "TCS",
+        "marketCap": "₹11.75 L Cr",
+        "pe": 25.4,
+        "roe": 46.8
+      },
+      {
+        "name": "HCL Technologies Limited",
+        "ticker": "HCLTECH",
+        "marketCap": "₹4.85 L Cr",
+        "pe": 22.7,
+        "roe": 26.8
+      },
+      {
+        "name": "Wipro Limited",
+        "ticker": "WIPRO",
+        "marketCap": "₹2.55 L Cr",
+        "pe": 20.9,
+        "roe": 17.3
+      }
+    ],
+    "analyst": {
+      "rating": "Buy",
+      "targetPrice": 1950,
+      "upside": "9.22%",
+      "buy": 25,
+      "hold": 10,
+      "sell": 3,
+      "summary": "Analysts remain positive on Infosys due to strong digital capabilities, healthy margins and improving demand."
+    },
+    "research": {
+      "status": "Covered",
+      "lastUpdated": "August 2026",
+      "researchReports": 21
+    },
+    "estimates": {
+      "years": [
+        "FY26E",
+        "FY27E",
+        "FY28E"
+      ],
+      "revenue": [
+        171200,
+        182300,
+        195100
+      ],
+      "profit": [
+        28200,
+        30200,
+        32700
+      ],
+      "eps": [
+        67.8,
+        72.6,
+        78.5
+      ]
+    },
+    "documents": [
+      {
+        "title": "Annual Report FY2025",
+        "type": "Annual Report",
+        "date": "June 2025"
+      },
+      {
+        "title": "Q1 FY2026 Results",
+        "type": "Financial Results",
+        "date": "July 2025"
+      },
+      {
+        "title": "Investor Presentation",
+        "type": "Presentation",
+        "date": "July 2025"
+      }
     ]
   },
   {
     "ticker": "RELIANCE",
     "name": "Reliance Industries Limited",
+    "shortName": "Reliance",
     "exchange": "NSE",
-    "sector": "Conglomerate",
-    "industry": "Diversified",
-    "price": 3214.3,
-    "change": -12.7,
-    "changePercent": -0.39,
-    "marketCap": "₹21.8 L Cr",
-    "lastUpdated": "24 Aug 2026, 03:30 PM",
-    "about": "Reliance Industries operates across energy, retail, digital services and new-energy businesses.",
-    "website": "https://www.ril.com",
-    "metrics": [
-      {"label":"P/E","value":"27.2","tone":"neutral"},
-      {"label":"P/B","value":"3.4","tone":"neutral"},
-      {"label":"ROE","value":"13.8%","tone":"positive"},
-      {"label":"ROCE","value":"11.9%","tone":"neutral"},
-      {"label":"Dividend Yield","value":"0.3%","tone":"neutral"},
-      {"label":"Debt/Equity","value":"0.42","tone":"neutral"}
+    "sector": "Oil & Gas",
+    "industry": "Integrated Energy",
+    "aliases": [
+      "reliance",
+      "reliance industries",
+      "reliance industries limited",
+      "ril"
     ],
-    "shareholding": [
-      {"name":"Promoters","value":50.12},
-      {"name":"FII","value":18.34},
-      {"name":"DII","value":12.25},
-      {"name":"Public","value":19.29}
-    ],
-    "financials": [
-      {"year":"FY22","revenue":792756,"profit":67368,"eps":101.8},
-      {"year":"FY23","revenue":939173,"profit":74088,"eps":108.5},
-      {"year":"FY24","revenue":1007651,"profit":79525,"eps":116.1},
-      {"year":"FY25","revenue":1049340,"profit":82490,"eps":120.3},
-      {"year":"FY26","revenue":1118400,"profit":90120,"eps":131.4}
-    ],
-    "balanceSheet": [
-      {"year":"FY22","equity":425000,"reserves":397000,"debt":273000},
-      {"year":"FY23","equity":460000,"reserves":431000,"debt":292000},
-      {"year":"FY24","equity":502000,"reserves":469000,"debt":305000},
-      {"year":"FY25","equity":535000,"reserves":501000,"debt":287000},
-      {"year":"FY26","equity":576000,"reserves":540000,"debt":276000}
-    ],
-    "history": [
-      {"date":"2026-07-20","price":3098,"volume":12500000},
-      {"date":"2026-07-21","price":3130,"volume":14100000},
-      {"date":"2026-07-22","price":3115,"volume":11800000},
-      {"date":"2026-07-23","price":3152,"volume":15600000},
-      {"date":"2026-07-24","price":3180,"volume":14900000},
-      {"date":"2026-07-27","price":3168,"volume":13100000},
-      {"date":"2026-07-28","price":3190,"volume":13700000},
-      {"date":"2026-07-29","price":3210,"volume":14500000},
-      {"date":"2026-07-30","price":3202,"volume":13900000},
-      {"date":"2026-07-31","price":3220,"volume":15200000},
-      {"date":"2026-08-03","price":3240,"volume":15800000},
-      {"date":"2026-08-04","price":3225,"volume":14300000},
-      {"date":"2026-08-05","price":3255,"volume":16200000},
-      {"date":"2026-08-06","price":3270,"volume":16900000},
-      {"date":"2026-08-07","price":3258,"volume":15500000},
-      {"date":"2026-08-10","price":3235,"volume":14700000},
-      {"date":"2026-08-11","price":3248,"volume":15100000},
-      {"date":"2026-08-12","price":3260,"volume":16400000},
-      {"date":"2026-08-13","price":3242,"volume":15000000},
-      {"date":"2026-08-14","price":3228,"volume":14400000},
-      {"date":"2026-08-18","price":3250,"volume":15200000},
-      {"date":"2026-08-19","price":3238,"volume":13800000},
-      {"date":"2026-08-20","price":3226,"volume":13200000},
-      {"date":"2026-08-21","price":3227,"volume":12900000},
-      {"date":"2026-08-24","price":3214.3,"volume":13600000}
+    "description": "Reliance Industries is a diversified Indian conglomerate with businesses spanning energy, petrochemicals, retail, telecommunications and digital services.",
+    "price": {
+      "current": 1428.75,
+      "change": -8.25,
+      "changePercent": -0.57,
+      "previousClose": 1437
+    },
+    "overview": {
+      "marketCap": "₹19.30 L Cr",
+      "enterpriseValue": "₹21.40 L Cr",
+      "bookValue": "₹985.20",
+      "faceValue": "₹10",
+      "dividendYield": "0.31%",
+      "peRatio": "26.80",
+      "pbRatio": "1.45",
+      "roe": "9.70%",
+      "roce": "10.80%",
+      "debtToEquity": "0.42"
+    },
+    "shareholding": {
+      "promoters": 50.31,
+      "foreignInstitutions": 18.54,
+      "domesticInstitutions": 13.92,
+      "retail": 17.23
+    },
+    "financials": {
+      "years": [
+        "FY22",
+        "FY23",
+        "FY24",
+        "FY25"
+      ],
+      "sales": [
+        724827,
+        982270,
+        976524,
+        1004380
+      ],
+      "expenses": [
+        627432,
+        872451,
+        861241,
+        889245
+      ],
+      "profit": [
+        67365,
+        73573,
+        79020,
+        81523
+      ],
+      "eps": [
+        99.2,
+        108.3,
+        116.2,
+        119.8
+      ]
+    },
+    "balanceSheet": {
+      "years": [
+        "FY22",
+        "FY23",
+        "FY24",
+        "FY25"
+      ],
+      "equity": [
+        654210,
+        712540,
+        785420,
+        842310
+      ],
+      "borrowings": [
+        312450,
+        345120,
+        351820,
+        366420
+      ],
+      "cash": [
+        108540,
+        124230,
+        132540,
+        146820
+      ]
+    },
+    "priceHistory": [
+      {
+        "date": "2026-01-01",
+        "price": 1520,
+        "volume": 5320000
+      },
+      {
+        "date": "2026-02-01",
+        "price": 1495,
+        "volume": 4820000
+      },
+      {
+        "date": "2026-03-01",
+        "price": 1470,
+        "volume": 5110000
+      },
+      {
+        "date": "2026-04-01",
+        "price": 1452,
+        "volume": 5640000
+      },
+      {
+        "date": "2026-05-01",
+        "price": 1438,
+        "volume": 4910000
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1420,
+        "volume": 5830000
+      },
+      {
+        "date": "2026-07-01",
+        "price": 1437,
+        "volume": 5480000
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1429,
+        "volume": 6010000
+      }
     ],
     "peers": [
-      {"name":"ONGC","ticker":"ONGC","price":"₹286","pe":"8.9","roe":"16.4%","marketCap":"₹3.6 L Cr"},
-      {"name":"Bharti Airtel","ticker":"BHARTIARTL","price":"₹2,156","pe":"31.2","roe":"19.1%","marketCap":"₹13.1 L Cr"},
-      {"name":"ITC","ticker":"ITC","price":"₹548","pe":"25.1","roe":"27.3%","marketCap":"₹6.8 L Cr"},
-      {"name":"Adani Enterprises","ticker":"ADANIENT","price":"₹2,918","pe":"39.5","roe":"9.7%","marketCap":"₹3.4 L Cr"}
+      {
+        "name": "Indian Oil Corporation Limited",
+        "ticker": "IOC",
+        "marketCap": "₹2.10 L Cr",
+        "pe": 7.8,
+        "roe": 15.2
+      },
+      {
+        "name": "ONGC Limited",
+        "ticker": "ONGC",
+        "marketCap": "₹3.55 L Cr",
+        "pe": 8.9,
+        "roe": 14.8
+      },
+      {
+        "name": "Adani Enterprises Limited",
+        "ticker": "ADANIENT",
+        "marketCap": "₹3.20 L Cr",
+        "pe": 48.5,
+        "roe": 8.9
+      }
     ],
     "analyst": {
-      "consensus": "Buy",
-      "score": 4.1,
-      "coverage": 35,
-      "summary": "Analysts see long-term value from digital, retail and new-energy investments, balanced by capital intensity and execution risk.",
-      "bullCase": "Strong growth across consumer-facing platforms and new energy.",
-      "riskCase": "High capex requirements and pressure in core energy margins."
+      "rating": "Buy",
+      "targetPrice": 1600,
+      "upside": "11.99%",
+      "buy": 23,
+      "hold": 9,
+      "sell": 4,
+      "summary": "Analysts see long-term growth opportunities from retail, digital services and new energy investments."
     },
-    "researchStatus": {
-      "status": "Active",
-      "lastReview": "21 Aug 2026",
-      "owner": "Equity Research Desk",
-      "nextReview": "Q2 FY27 results"
+    "research": {
+      "status": "Covered",
+      "lastUpdated": "August 2026",
+      "researchReports": 19
     },
-    "estimates": [
-      {"year":"FY27E","revenue":"₹11,95,000 Cr","ebitda":"₹2,05,000 Cr","eps":"₹146.8"},
-      {"year":"FY28E","revenue":"₹12,92,000 Cr","ebitda":"₹2,29,000 Cr","eps":"₹163.2"},
-      {"year":"FY29E","revenue":"₹13,84,000 Cr","ebitda":"₹2,52,000 Cr","eps":"₹179.4"}
-    ],
+    "estimates": {
+      "years": [
+        "FY26E",
+        "FY27E",
+        "FY28E"
+      ],
+      "revenue": [
+        1051200,
+        1108500,
+        1174300
+      ],
+      "profit": [
+        86100,
+        91200,
+        98200
+      ],
+      "eps": [
+        126.4,
+        133.9,
+        144.2
+      ]
+    },
     "documents": [
-      {"title":"Annual Report FY26","type":"Annual Report","date":"12 Jul 2026","size":"8.2 MB"},
-      {"title":"Investor Presentation Q1 FY27","type":"Presentation","date":"21 Jul 2026","size":"3.4 MB"},
-      {"title":"Earnings Call Transcript Q1 FY27","type":"Transcript","date":"22 Jul 2026","size":"1.1 MB"},
-      {"title":"Sustainability Report","type":"ESG","date":"29 Jul 2026","size":"2.8 MB"}
-    ]
-  },
-  {
-    "ticker": "TCS",
-    "name": "Tata Consultancy Services Limited",
-    "exchange": "NSE",
-    "sector": "Information Technology",
-    "industry": "IT Services & Consulting",
-    "price": 3986.2,
-    "change": 27.6,
-    "changePercent": 0.7,
-    "marketCap": "₹14.4 L Cr",
-    "lastUpdated": "24 Aug 2026, 03:30 PM",
-    "about": "Tata Consultancy Services provides IT services, consulting and business solutions to enterprises worldwide.",
-    "website": "https://www.tcs.com",
-    "metrics": [
-      {"label":"P/E","value":"29.1","tone":"neutral"},
-      {"label":"P/B","value":"14.0","tone":"neutral"},
-      {"label":"ROE","value":"51.2%","tone":"positive"},
-      {"label":"ROCE","value":"62.4%","tone":"positive"},
-      {"label":"Dividend Yield","value":"1.5%","tone":"positive"},
-      {"label":"Debt/Equity","value":"0.05","tone":"positive"}
-    ],
-    "shareholding": [
-      {"name":"Promoters","value":71.74},
-      {"name":"FII","value":12.80},
-      {"name":"DII","value":10.20},
-      {"name":"Public","value":5.26}
-    ],
-    "financials": [
-      {"year":"FY22","revenue":191754,"profit":38327,"eps":103.5},
-      {"year":"FY23","revenue":225458,"profit":42303,"eps":114.2},
-      {"year":"FY24","revenue":240893,"profit":45690,"eps":123.3},
-      {"year":"FY25","revenue":255300,"profit":48040,"eps":129.7},
-      {"year":"FY26","revenue":270420,"profit":51320,"eps":138.6}
-    ],
-    "balanceSheet": [
-      {"year":"FY22","equity":109000,"reserves":106000,"debt":7400},
-      {"year":"FY23","equity":118000,"reserves":114000,"debt":6800},
-      {"year":"FY24","equity":126000,"reserves":122000,"debt":5900},
-      {"year":"FY25","equity":134000,"reserves":130000,"debt":5200},
-      {"year":"FY26","equity":142000,"reserves":138000,"debt":4700}
-    ],
-    "history": [
-      {"date":"2026-07-20","price":3808,"volume":4100000},
-      {"date":"2026-07-21","price":3830,"volume":4300000},
-      {"date":"2026-07-22","price":3818,"volume":3900000},
-      {"date":"2026-07-23","price":3852,"volume":4600000},
-      {"date":"2026-07-24","price":3875,"volume":4400000},
-      {"date":"2026-07-27","price":3862,"volume":4200000},
-      {"date":"2026-07-28","price":3894,"volume":4700000},
-      {"date":"2026-07-29","price":3910,"volume":4800000},
-      {"date":"2026-07-30","price":3902,"volume":4500000},
-      {"date":"2026-07-31","price":3922,"volume":4900000},
-      {"date":"2026-08-03","price":3940,"volume":5100000},
-      {"date":"2026-08-04","price":3928,"volume":4600000},
-      {"date":"2026-08-05","price":3950,"volume":5000000},
-      {"date":"2026-08-06","price":3972,"volume":5200000},
-      {"date":"2026-08-07","price":3961,"volume":4900000},
-      {"date":"2026-08-10","price":3948,"volume":4700000},
-      {"date":"2026-08-11","price":3965,"volume":5100000},
-      {"date":"2026-08-12","price":3980,"volume":5300000},
-      {"date":"2026-08-13","price":3968,"volume":5000000},
-      {"date":"2026-08-14","price":3990,"volume":5400000},
-      {"date":"2026-08-18","price":3974,"volume":4800000},
-      {"date":"2026-08-19","price":3980,"volume":4600000},
-      {"date":"2026-08-20","price":3962,"volume":4400000},
-      {"date":"2026-08-21","price":3958,"volume":4300000},
-      {"date":"2026-08-24","price":3986.2,"volume":4700000}
-    ],
-    "peers": [
-      {"name":"Infosys","ticker":"INFY","price":"₹1,843","pe":"26.8","roe":"28.4%","marketCap":"₹7.66 L Cr"},
-      {"name":"HCLTech","ticker":"HCLTECH","price":"₹1,738","pe":"24.6","roe":"28.7%","marketCap":"₹4.7 L Cr"},
-      {"name":"Wipro","ticker":"WIPRO","price":"₹528","pe":"21.4","roe":"17.9%","marketCap":"₹2.7 L Cr"},
-      {"name":"Tech Mahindra","ticker":"TECHM","price":"₹1,694","pe":"30.5","roe":"18.2%","marketCap":"₹1.7 L Cr"}
-    ],
-    "analyst": {
-      "consensus": "Buy",
-      "score": 4.3,
-      "coverage": 31,
-      "summary": "Analysts highlight premium execution quality and cash generation, with growth recovery as the main upside driver.",
-      "bullCase": "Strong execution, high cash conversion and resilient client relationships.",
-      "riskCase": "Premium valuation and slower discretionary recovery."
-    },
-    "researchStatus": {
-      "status": "Active",
-      "lastReview": "20 Aug 2026",
-      "owner": "Equity Research Desk",
-      "nextReview": "Q2 FY27 results"
-    },
-    "estimates": [
-      {"year":"FY27E","revenue":"₹2,88,900 Cr","ebitda":"₹71,600 Cr","eps":"₹149.5"},
-      {"year":"FY28E","revenue":"₹3,08,500 Cr","ebitda":"₹78,200 Cr","eps":"₹163.8"},
-      {"year":"FY29E","revenue":"₹3,31,600 Cr","ebitda":"₹85,100 Cr","eps":"₹179.1"}
-    ],
-    "documents": [
-      {"title":"Annual Report FY26","type":"Annual Report","date":"15 Jun 2026","size":"5.4 MB"},
-      {"title":"Investor Presentation Q1 FY27","type":"Presentation","date":"10 Jul 2026","size":"2.6 MB"},
-      {"title":"Earnings Call Transcript Q1 FY27","type":"Transcript","date":"11 Jul 2026","size":"820 KB"},
-      {"title":"ESG Fact Sheet","type":"ESG","date":"25 Jul 2026","size":"1.2 MB"}
+      {
+        "title": "Annual Report FY2025",
+        "type": "Annual Report",
+        "date": "August 2025"
+      },
+      {
+        "title": "Q1 FY2026 Results",
+        "type": "Financial Results",
+        "date": "July 2025"
+      },
+      {
+        "title": "Investor Presentation",
+        "type": "Presentation",
+        "date": "July 2025"
+      }
     ]
   }
 ]

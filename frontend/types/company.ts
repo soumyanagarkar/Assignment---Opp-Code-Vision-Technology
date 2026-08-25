@@ -1,99 +1,101 @@
-export type Metric = {
-  label: string;
-  value: string;
-  tone: "positive" | "neutral";
-};
-
-export type HistoryPoint = {
-  date: string;
-  price: number;
-  volume: number;
-};
-
-export type FinancialRow = {
-  year: string;
-  revenue: number;
-  profit: number;
-  eps: number;
-};
-
-export type BalanceRow = {
-  year: string;
-  equity: number;
-  reserves: number;
-  debt: number;
-};
-
-export type Shareholding = {
-  name: string;
-  value: number;
-};
-
-export type Peer = {
-  name: string;
-  ticker: string;
-  price: string;
-  pe: string;
-  roe: string;
-  marketCap: string;
-};
-
-export type Analyst = {
-  consensus: string;
-  score: number;
-  coverage: number;
-  summary: string;
-  bullCase: string;
-  riskCase: string;
-};
-
-export type ResearchStatus = {
-  status: string;
-  lastReview: string;
-  owner: string;
-  nextReview: string;
-};
-
-export type Estimate = {
-  year: string;
-  revenue: string;
-  ebitda: string;
-  eps: string;
-};
-
-export type DocumentItem = {
-  title: string;
-  type: string;
-  date: string;
-  size: string;
-};
-
-export type Company = {
+export interface CompanySearchResult {
   ticker: string;
   name: string;
+  sector: string;
+  aliases?: string[];
+}
+
+export interface Company {
+  ticker: string;
+  name: string;
+  shortName: string;
   exchange: string;
   sector: string;
   industry: string;
-  price: number;
-  change: number;
-  changePercent: number;
-  marketCap: string;
-  lastUpdated: string;
-  about: string;
-  website: string;
-  metrics: Metric[];
-  shareholding: Shareholding[];
-  financials: FinancialRow[];
-  balanceSheet: BalanceRow[];
-  history: HistoryPoint[];
-  peers: Peer[];
-  analyst: Analyst;
-  researchStatus: ResearchStatus;
-  estimates: Estimate[];
-  documents: DocumentItem[];
-};
+  description: string;
 
-export type CompanySearchResult = Pick<
-  Company,
-  "ticker" | "name" | "sector" | "industry" | "exchange"
->;
+  price: {
+    current: number;
+    change: number;
+    changePercent: number;
+    previousClose: number;
+  };
+
+  overview: {
+    marketCap: string;
+    enterpriseValue: string;
+    bookValue: string;
+    faceValue: string;
+    dividendYield: string;
+    peRatio: string;
+    pbRatio: string;
+    roe: string;
+    roce: string;
+    debtToEquity: string;
+  };
+
+  shareholding: {
+    promoters: number;
+    foreignInstitutions: number;
+    domesticInstitutions: number;
+    retail: number;
+  };
+
+  financials: {
+    years: string[];
+    sales: number[];
+    expenses: number[];
+    profit: number[];
+    eps: number[];
+  };
+
+  balanceSheet: {
+    years: string[];
+    equity: number[];
+    borrowings: number[];
+    cash: number[];
+  };
+
+  priceHistory: {
+    date: string;
+    price: number;
+    volume: number;
+  }[];
+
+  peers: {
+    name: string;
+    ticker: string;
+    marketCap: string;
+    pe: number;
+    roe: number;
+  }[];
+
+  analyst: {
+    rating: string;
+    targetPrice: number;
+    upside: string;
+    buy: number;
+    hold: number;
+    sell: number;
+    summary: string;
+  };
+
+  research: {
+    status: string;
+    lastUpdated: string;
+    researchReports: number;
+  };
+
+  estimates: {
+    years: string[];
+    revenue: number[];
+    profit: number[];
+    eps: number[];
+  };
+
+  documents: {
+    title: string;
+    type: string;
+    date: string;
+  }[];
+}
