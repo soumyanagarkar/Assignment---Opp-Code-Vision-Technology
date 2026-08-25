@@ -48,8 +48,6 @@ Data:
 PROJECT STRUCTURE
 -----------------
 
-## PROJECT STRUCTURE
-
 I have divided this project into two main parts: Frontend and Backend.
 
 ### Frontend
