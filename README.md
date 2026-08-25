@@ -48,77 +48,113 @@ Data:
 PROJECT STRUCTURE
 -----------------
 
-\section{Project Structure}
+PROJECT STRUCTURE
 
-The project is divided into two main parts: the frontend and the backend.
+The project is divided into two main parts: Frontend and Backend.
 
-\subsection{Frontend}
 
-\begin{center}
-\begin{tabular}{|p{4.2cm}|p{8.5cm}|}
-\hline
-\textbf{Folder / File} & \textbf{Purpose} \\
-\hline
-\texttt{frontend/app/} & Main Next.js application pages and global styles. \\
-\hline
-\texttt{frontend/components/} & Reusable React components for the company dashboard. \\
-\hline
-\texttt{frontend/lib/api.ts} & Handles communication between the frontend and backend API. \\
-\hline
-\texttt{frontend/types/} & Contains TypeScript interfaces and data types. \\
-\hline
-\end{tabular}
-\end{center}
+FRONTEND
 
-\subsection{Backend}
+The frontend is built using Next.js, React, and TypeScript.
 
-\begin{center}
-\begin{tabular}{|p{4.2cm}|p{8.5cm}|}
-\hline
-\textbf{Folder / File} & \textbf{Purpose} \\
-\hline
-\texttt{backend/src/server.ts} & Starts the Node.js and Express server. \\
-\hline
-\texttt{backend/src/data/companies.json} & Stores all mock company data in JSON format. \\
-\hline
-\texttt{backend/src/routes/} & Contains API routes for company data and search. \\
-\hline
-\texttt{backend/src/utils/} & Contains company search and matching logic. \\
-\hline
-\end{tabular}
-\end{center}
+app/
+Contains the main Next.js pages and global CSS.
 
-\subsection{Main Components}
+components/
+Contains reusable components used to build the company dashboard.
 
-\begin{itemize}
-    \item \textbf{CompanyPage} -- Main company dashboard.
-    \item \textbf{CompanySearch} -- Search company by name or ticker.
-    \item \textbf{CompanyHeader} -- Displays company overview and current price.
-    \item \textbf{KeyRatios} -- Displays important financial ratios.
-    \item \textbf{Shareholding} -- Shows the shareholding pattern.
-    \item \textbf{PriceChart} -- Displays historical price and volume.
-    \item \textbf{Financials} -- Displays financial statements.
-    \item \textbf{PeerComparison} -- Compares the company with its peers.
-    \item \textbf{AnalystSummary} -- Displays analyst ratings and target price.
-    \item \textbf{ResearchStatus} -- Displays research coverage information.
-    \item \textbf{Estimates} -- Displays future financial estimates.
-    \item \textbf{Documents} -- Displays available company documents.
-\end{itemize}
+lib/api.ts
+Handles communication between the frontend and backend API.
 
-\subsection{Data Flow}
+types/
+Contains TypeScript interfaces and types for company data.
 
-\begin{center}
-\texttt{companies.json}
-$\rightarrow$
-\texttt{Express API}
-$\rightarrow$
-\texttt{api.ts}
-$\rightarrow$
-\texttt{CompanyPage}
-$\rightarrow$
-\texttt{Reusable Components}
-\end{center}
 
+MAIN FRONTEND COMPONENTS
+
+CompanyPage
+Main company detail dashboard.
+
+CompanySearch
+Allows users to search companies by name or ticker.
+
+CompanyHeader
+Displays company name, exchange, sector, price, and basic information.
+
+KeyRatios
+Displays important financial ratios.
+
+Shareholding
+Displays the company shareholding pattern.
+
+PriceChart
+Displays historical price and trading volume.
+
+Financials
+Displays financial statements and historical financial data.
+
+PeerComparison
+Compares the selected company with other companies in the same industry.
+
+AnalystSummary
+Displays analyst rating, target price, and analyst consensus.
+
+ResearchStatus
+Displays research coverage and research report information.
+
+Estimates
+Displays estimated future revenue, profit, and EPS.
+
+Documents
+Displays available company reports and documents.
+
+
+BACKEND
+
+The backend is built using Node.js, Express, and TypeScript.
+
+src/server.ts
+Starts the Express server and configures the API.
+
+src/data/companies.json
+Contains all mock company data used by the application.
+
+src/routes/
+Contains API routes for retrieving company data and searching companies.
+
+src/utils/
+Contains the company search and matching logic.
+
+
+DATA FLOW
+
+The application follows this flow:
+
+companies.json
+        |
+        v
+Node.js + Express API
+        |
+        v
+Frontend API Layer
+        |
+        v
+CompanyPage
+        |
+        v
+Reusable React Components
+        |
+        v
+Company Dashboard
+
+
+DATA SOURCE
+
+The project uses mock JSON data only.
+
+No live stock market API or external market-data service is used.
+
+All company information, financial data, shareholding data, historical prices, analyst information, estimates, and documents are stored in the JSON file and served through the backend API.
 SETUP INSTRUCTIONS
 ------------------
 
