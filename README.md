@@ -48,19 +48,76 @@ Data:
 PROJECT STRUCTURE
 -----------------
 
-company-detailed-view/
-│
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   └── types/
-│
-└── backend/
-    ├── src/
-    └── data/
-        └── companies.json
+\section{Project Structure}
 
+The project is divided into two main parts: the frontend and the backend.
+
+\subsection{Frontend}
+
+\begin{center}
+\begin{tabular}{|p{4.2cm}|p{8.5cm}|}
+\hline
+\textbf{Folder / File} & \textbf{Purpose} \\
+\hline
+\texttt{frontend/app/} & Main Next.js application pages and global styles. \\
+\hline
+\texttt{frontend/components/} & Reusable React components for the company dashboard. \\
+\hline
+\texttt{frontend/lib/api.ts} & Handles communication between the frontend and backend API. \\
+\hline
+\texttt{frontend/types/} & Contains TypeScript interfaces and data types. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Backend}
+
+\begin{center}
+\begin{tabular}{|p{4.2cm}|p{8.5cm}|}
+\hline
+\textbf{Folder / File} & \textbf{Purpose} \\
+\hline
+\texttt{backend/src/server.ts} & Starts the Node.js and Express server. \\
+\hline
+\texttt{backend/src/data/companies.json} & Stores all mock company data in JSON format. \\
+\hline
+\texttt{backend/src/routes/} & Contains API routes for company data and search. \\
+\hline
+\texttt{backend/src/utils/} & Contains company search and matching logic. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Main Components}
+
+\begin{itemize}
+    \item \textbf{CompanyPage} -- Main company dashboard.
+    \item \textbf{CompanySearch} -- Search company by name or ticker.
+    \item \textbf{CompanyHeader} -- Displays company overview and current price.
+    \item \textbf{KeyRatios} -- Displays important financial ratios.
+    \item \textbf{Shareholding} -- Shows the shareholding pattern.
+    \item \textbf{PriceChart} -- Displays historical price and volume.
+    \item \textbf{Financials} -- Displays financial statements.
+    \item \textbf{PeerComparison} -- Compares the company with its peers.
+    \item \textbf{AnalystSummary} -- Displays analyst ratings and target price.
+    \item \textbf{ResearchStatus} -- Displays research coverage information.
+    \item \textbf{Estimates} -- Displays future financial estimates.
+    \item \textbf{Documents} -- Displays available company documents.
+\end{itemize}
+
+\subsection{Data Flow}
+
+\begin{center}
+\texttt{companies.json}
+$\rightarrow$
+\texttt{Express API}
+$\rightarrow$
+\texttt{api.ts}
+$\rightarrow$
+\texttt{CompanyPage}
+$\rightarrow$
+\texttt{Reusable Components}
+\end{center}
 
 SETUP INSTRUCTIONS
 ------------------
