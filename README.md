@@ -1,15 +1,13 @@
 COMPANY DETAILED VIEW
+=====================
 
-OVERVIEW
+I have build a responsive company research page built using Next.js, React, TypeScript, and Node.js/Express.
 
-I built a responsive company research page using Next.js, React, TypeScript, and Node.js with Express.
-
-The design is inspired by financial research platforms such as Screener.in. I used mock JSON data for this assessment and did not use any live stock market API.
+The design is inspired by financial research platforms such as Screener.in. The project uses mock JSON data and does not use any live stock market API.
 
 
 FEATURES
-
-I included the following features in the application:
+--------
 
 - Company overview
 - Current stock price
@@ -20,22 +18,17 @@ I included the following features in the application:
 - Peer comparison
 - Analyst summary
 - Research status
-- Financial estimates
+- Estimates
 - Company documents
 - Search by company name or ticker
-- Accurate search with relevance-based results
-- Debounced search
-- Loading states
-- Error states
+- Loading and error states
 - Responsive design
-- Reusable React components
-- TypeScript
 
 
 TECHNOLOGIES USED
+-----------------
 
 Frontend:
-
 - Next.js
 - React
 - TypeScript
@@ -43,300 +36,144 @@ Frontend:
 - Lucide React
 
 Backend:
-
 - Node.js
 - Express.js
 - TypeScript
 
 Data:
-
 - Mock JSON data
 - No live market-data API
 
 
 PROJECT STRUCTURE
+-----------------
 
-I divided the project into two main parts: Frontend and Backend.
+## PROJECT STRUCTURE
 
+I have divided this project into two main parts: Frontend and Backend.
 
-FRONTEND
+### Frontend
 
 The frontend is built using Next.js, React, and TypeScript.
 
-app/
-Contains the main Next.js pages and global CSS.
+- `app/` - Contains the main Next.js pages and global CSS.
+- `components/` - Contains reusable components used to build the company dashboard.
+- `lib/api.ts` - Handles communication between the frontend and backend API.
+- `types/` - Contains TypeScript interfaces and types for company data.
 
-components/
-Contains the reusable components used to build the company dashboard.
+### Main Frontend Components
 
-lib/api.ts
-Handles communication between the frontend and backend API.
+- `CompanyPage` - Main company detail dashboard.
+- `CompanySearch` - Allows users to search companies by name or ticker.
+- `CompanyHeader` - Displays company name, exchange, sector, price, and basic information.
+- `KeyRatios` - Displays important financial ratios.
+- `Shareholding` - Displays the company shareholding pattern.
+- `PriceChart` - Displays historical price and trading volume.
+- `Financials` - Displays financial statements and historical financial data.
+- `PeerComparison` - Compares the selected company with other companies.
+- `AnalystSummary` - Displays analyst rating, target price, and analyst consensus.
+- `ResearchStatus` - Displays research coverage and research report information.
+- `Estimates` - Displays estimated future revenue, profit, and EPS.
+- `Documents` - Displays available company reports and documents.
 
-types/
-Contains TypeScript interfaces and types for company data.
-
-
-MAIN FRONTEND COMPONENTS
-
-CompanyPage
-Main company detail dashboard.
-
-CompanySearch
-Allows users to search companies by name or ticker.
-
-CompanyHeader
-Displays company name, exchange, sector, price, and basic information.
-
-KeyRatios
-Displays important financial ratios.
-
-Shareholding
-Displays the company shareholding pattern.
-
-PriceChart
-Displays historical price and trading volume.
-
-Financials
-Displays financial statements and historical financial data.
-
-PeerComparison
-Compares the selected company with other companies.
-
-AnalystSummary
-Displays analyst rating, target price, and analyst consensus.
-
-ResearchStatus
-Displays research coverage and research report information.
-
-Estimates
-Displays estimated future revenue, profit, and EPS.
-
-Documents
-Displays available company reports and documents.
-
-
-BACKEND
+### Backend
 
 The backend is built using Node.js, Express, and TypeScript.
 
-src/server.ts
-Starts the Express server and configures the API.
+- `src/server.ts` - Starts the Express server and configures the API.
+- `src/data/companies.json` - Contains all mock company data.
+- `src/routes/` - Contains API routes for retrieving company data and searching companies.
+- `src/utils/` - Contains the company search and matching logic.
 
-src/data/companies.json
-Contains all mock company data used by the application.
-
-src/routes/
-Contains API routes for retrieving company data and searching companies.
-
-src/utils/
-Contains the company search and matching logic.
-
-
-DATA FLOW
+### Data Flow
 
 The application follows this flow:
 
-companies.json
-      |
-      v
-Node.js + Express API
-      |
-      v
-Frontend API Layer
-      |
-      v
-CompanyPage
-      |
-      v
-Reusable React Components
-      |
-      v
-Company Dashboard
-
-
-DATA SOURCE
-
-I used mock company data stored in JSON format.
-
-I did not use any live stock market API or external market-data service.
-
-The JSON data contains:
-
-- Company details
-- Stock price
-- Key ratios
-- Shareholding
-- Financial statements
-- Balance sheet information
-- Historical price and volume
-- Peer companies
-- Analyst information
-- Research status
-- Financial estimates
-- Company documents
-
-I kept the company information outside the frontend instead of hardcoding it into React components.
-
-The frontend requests the required information from the Node.js and Express backend.
-
+`companies.json`
+→ `Node.js + Express API`
+→ `Frontend API Layer`
+→ `CompanyPage`
+→ `Reusable React Components`
+→ `Company Dashboard`
 
 SETUP INSTRUCTIONS
+------------------
 
-1. Clone the Repository
+1. Clone the repository
 
-I can clone the GitHub repository using:
+   git clone YOUR_GITHUB_REPOSITORY_URL
 
-git clone YOUR_GITHUB_REPOSITORY_URL
-
-Then I move into the project folder:
-
-cd company-detailed-view
+   cd company-detailed-view
 
 
 2. Start the Backend
 
-I open a terminal and move into the backend folder:
+   Open a terminal and run:
 
-cd backend
+   cd backend
 
-Then I install the dependencies:
+   npm install
 
-npm install
+   npm run dev
 
-I start the backend development server using:
+   The backend will run on:
 
-npm run dev
-
-The backend runs on:
-
-http://localhost:5000
-
-To check whether the backend is running, I can open:
-
-http://localhost:5000
-
-The API should return:
-
-{
-  "success": true,
-  "message": "Company API is running"
-}
+   http://localhost:5000
 
 
 3. Start the Frontend
 
-I open another terminal and move into the frontend folder:
+   Open another terminal and run:
 
-cd frontend
+   cd frontend
 
-Then I install the dependencies:
+   npm install
 
-npm install
+   npm run dev
 
-I start the Next.js development server using:
+   Open the application in the browser:
 
-npm run dev
-
-The frontend runs on:
-
-http://localhost:3000
-
-I can open this address in a browser to view the application.
+   http://localhost:3000
 
 
 API ENDPOINTS
+-------------
 
-Get Company Data:
+Get company data:
 
-GET /api/companies/:ticker
-
-Example:
-
-GET /api/companies/TCS
+   GET /api/companies/TCS
 
 
-Search Companies:
+Search companies:
 
-GET /api/companies/search?q=query
-
-Example:
-
-GET /api/companies/search?q=tata
-
-
-SEARCH FUNCTIONALITY
-
-I implemented a search bar that allows users to search for companies using their company name or ticker.
-
-Examples include:
-
-TCS
-Tata
-Tata Consultancy
-INFY
-Infosys
-
-I added a short debounce before sending search requests. This prevents an API request from being sent for every character typed.
-
-The actual company matching is handled by the backend.
-
-The backend searches the company name, short name, ticker, and aliases.
-
-The search results are ranked according to relevance so that the most suitable results appear first.
-
-
-LOADING AND ERROR HANDLING
-
-I added loading and error handling to the application.
-
-Loading State:
-
-I display a loading screen while company information is being fetched from the backend.
-
-Error State:
-
-If the backend is unavailable or an API request fails, I display an error message and provide a retry option.
-
-Search State:
-
-The search interface displays:
-
-- A searching state while the API request is running
-- Matching companies when results are available
-- A message when no matching companies are found
+   GET /api/companies/search?q=tata
 
 
 APPROACH
+--------
 
-I used a component-based architecture for the project.
+The application is divided into reusable React components such as CompanyHeader, KeyRatios, Shareholding, Financials, PriceChart, PeerComparison, AnalystSummary, ResearchStatus, Estimates, and Documents.
 
-Instead of keeping the entire interface in one large component, I divided the company page into smaller reusable components.
+Company information is stored in JSON files instead of being hardcoded in the frontend.
 
-I created separate components for company information, key ratios, shareholding, price chart, financials, peer comparison, analyst summary, research status, estimates, and documents.
+The Node.js and Express backend reads the JSON data and provides it through API endpoints.
 
-I stored company information in JSON instead of hardcoding it in the frontend.
+The frontend fetches the data from the backend and displays it on the company page.
 
-I used the Node.js and Express backend to read the JSON data and provide it through API endpoints.
+The search feature supports company names and tickers. Search requests are debounced to avoid unnecessary API requests, and results are ranked based on their relevance.
 
-The frontend fetches the data from the backend and displays it using reusable React components.
+Loading and error states have also been added so the user receives feedback while data is being loaded or if the backend is unavailable.
 
-For the search functionality, I support company names, tickers, and aliases. I also added debouncing and relevance-based result ranking.
-
-I added loading and error states so that users receive proper feedback while data is being loaded or when the backend is unavailable.
-
-I made the layout responsive so that it works across desktop, tablet, and mobile screen sizes.
+The layout is responsive and works across desktop, tablet, and mobile screen sizes.
 
 
 DATA
+----
 
-I used mock company data for this assessment.
+This project uses mock company data for the assessment.
 
-I did not use any live stock market API.
+No live stock market API is used.
 
-All company information is stored locally in JSON format and served through the backend API.
+The data is stored locally in JSON format.
 
-The project currently contains mock data for the selected companies.
 
-The data structure is designed so that additional companies can be added to the JSON file without changing the frontend components.
-
-I kept the implementation simple and focused on demonstrating the requested functionality rather than production-level market-data integration.
